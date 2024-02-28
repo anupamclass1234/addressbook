@@ -18,6 +18,9 @@ COPY src ./src
 # Build the WAR file
 RUN mvn package
 
+#Compile the code 
+RUN mvn compile
+
 # Stage 2: Production stage
 FROM tomcat:8.5.78-jdk11-openjdk-slim
 
