@@ -15,6 +15,9 @@ RUN mvn dependency:go-offline
 # Copy the application source code
 COPY src ./src
 
+#Testing the application code 
+RUN mvn test
+
 # Build the WAR file
 RUN mvn package
 
