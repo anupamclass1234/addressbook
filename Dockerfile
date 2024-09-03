@@ -1,6 +1,9 @@
 # Stage 1: Build stage
 FROM maven:3.8.4-openjdk-11-slim AS build-stage
 
+#Developer details 
+LABEL maintainer="Developer Anupam @ anupam.karmakar08@gmail.com && contact no -8585066317"
+
 # Set the working directory inside the container
 WORKDIR /app
 
